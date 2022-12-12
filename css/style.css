@@ -1,0 +1,285 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Couleurs */
+.white{
+    color: white;
+}
+
+.black{
+    color: black;
+}
+
+.red{
+    color: red
+}
+/* Fin couleurs */
+
+/* Menu Burger */
+.burger:hover{
+    cursor: pointer;
+}
+
+.menuBurger{
+    background-color: red;
+    height: 80vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s;
+    text-align: center;
+}
+
+.menuBurger-visible{
+    width: 30vw;
+    transition: .5s;
+}
+
+.menuBurger>ul {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 4rem;
+    margin: 6px;
+    padding-top: 30px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    padding-left: 5px;
+    white-space: nowrap;
+}
+
+ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+
+ul>li>a:hover{
+    color: white;
+}
+
+.menuBurger>*{
+    opacity: 0%;
+    transition: opacity .5s;
+}
+
+.menuBurger-visible>*{
+    opacity: 100%;
+    transition: opacity 3s;
+}
+
+hr{
+    background-color: white;
+    height: 2px;
+}
+
+.hidden{
+    display: none;
+}
+/* Fin Burger */
+
+/* Hero */
+.hero {
+    background-image: url(../img/15.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.nav{
+    height: 20%;
+    background-color: red;
+}
+
+.boitePunchline{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.punchline{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.8rem;
+    padding:4px;
+    margin-top: 4px;
+}
+
+.elementsNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.logoSize{
+    height: 50px;
+}
+
+.imgBanner{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.imgHBanner{
+    height: 200px;
+}
+
+
+.scrollDownButton{
+    height: 50px;
+    width: 460px;
+    background-color: rgb(65, 134, 65);
+    border: none;
+}
+
+.scrollDown{
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.scrollDown:hover{
+    color: white;
+}
+/* Fin Hero */
+
+/* Annonces */
+.card-img-top{
+    height: 200px;
+}
+
+.photo{
+    height: 200px;
+    background-size: cover;
+}
+
+.photo1{
+    background-image: url(../img/+.png);
+    background-position: center;
+}
+
+.photo2{
+    background-image: url(../img/netflix.png);
+    background-position: center;
+}
+
+.photo3{
+    background-image: url(../img/redbull.jpg);
+    background-position: center;
+}
+
+.photo4{
+    background-image: url(../img/deezer.jpg);
+    background-position: center;
+}
+
+.photo5{
+    background-image: url(../img/mcdo.jpg);
+    background-position: center;
+}
+
+.photo6{
+    background-image: url(../img/voiture.jpg);
+    background-position: center;
+}
+
+.btn-primary{
+    background-color: rgb(65, 134, 65);
+    color: white;
+    border-color: rgb(65, 134, 65);
+    font-weight: 500;
+    border: 0px;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.btn-primary:hover{
+    background-color: rgb(54, 111, 54);
+}
+
+.annonces{
+    display: flex;
+    justify-content: center;
+}
+/* Fin Annonces */
+
+/* Chiffres */
+.chiffres{
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chiffreCard{
+    display: flex;
+    justify-content: center;
+}
+
+.valeurChiffre{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.descChiffre{
+    font-size: 0.9rem;
+}
+
+.boiteTexteChiffres{
+    width: 500px;
+}
+/* Fin Chiffres */
+
+/* Confiance/Footer */
+.confiance{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.avis{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.boiteAvis{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.6rem;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.imgSizeAvis{
+    height: 60px;
+    margin-left: 30px;
+}
+
+.boiteSocial{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.iconSocial{
+    height: 80px;
+}
+/* Fin Footer */
